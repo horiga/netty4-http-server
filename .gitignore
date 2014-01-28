@@ -1,8 +1,10 @@
-
 .DS_Store
 .svn
 
 # files
+.metadata
+.gradle
+*.pydevproject
 *.class
 *.jar
 *.war
@@ -16,11 +18,17 @@
 # directories
 target/
 bin/
+tmp/
+
+.externalToolBuilders/
 
 # eclipse
 .settings/
 .classpath
+.loadpath
 .project
-
+.buildpath
+.target
+.texlipse
 
 
