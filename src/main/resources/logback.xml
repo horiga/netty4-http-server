@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="default" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%t - %d{HH:mm:ss.SSS} %-5level %logger{36}[%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="default-async"
+		class="ch.qos.logback.classic.AsyncAppender">
+		<param name="queueSize" value="258" />
+		<param name="includeCallerData" value="true" />
+		<appender-ref ref="default" />
+	</appender>
+	
+	<root level="DEBUG">
+		<appender-ref ref="default-async" />
+	</root>
+	
+</configuration>

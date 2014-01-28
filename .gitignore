@@ -1,0 +1,26 @@
+
+.DS_Store
+.svn
+
+# files
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.bak
+*.swp
+*~.nib
+*.tmp
+
+# directories
+target/
+bin/
+
+# eclipse
+.settings/
+.classpath
+.project
+
+
+
